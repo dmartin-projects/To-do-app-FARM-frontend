@@ -4,7 +4,7 @@ import React from "react";
 function TodoItem(props) {
   const deleteTodoHandler = (_id) => {
     axios
-      .delete(`http://localhost:8000/api/todo/${_id}`)
+      .delete(`https://to-do-app-farm-backend.herokuapp.com/api/todo/${_id}`)
       .then((res) => console.log(res.data));
   };
   let date = new Date(props.todo.created_at);
