@@ -37,7 +37,7 @@ function App() {
         className="card text-white bg-primary mb-1"
         styleName="max-width: 20rem;"
       >
-        Task Manager
+        Task Manager - 2
       </h1>
       <h6 className="card text-white bg-primary mb-3">
         FASTAPI - React - MongoDB
