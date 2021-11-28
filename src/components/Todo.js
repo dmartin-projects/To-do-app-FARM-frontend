@@ -2,33 +2,54 @@ import axios from "axios";
 import React from "react";
 
 function TodoItem(props) {
+
   const deleteTodoHandler = (_id) => {
     axios
       .delete(`https://to-do-app-farm-backend.herokuapp.com/api/todo/${_id}`)
       .then((res) => console.log(res.data));
   };
+
   let date = new Date(props.todo.created_at);
   console.log(date);
   date = date.toLocaleString();
+  
+  date = 'created on ' + date
 
+  if(props.todo.timestamp_updated_at){
+      let date = new Date(props.todo.timestamp_updated_at);
+     
+      date = date.toLocaleString();
+      
+      date = 'task updated on ' + date
+ 
+  }
+
+      
   return (
-    <div>
-      <p>
-        <span style={{ fontWeight: "bold, underline" }}>
-          {props.todo.title} :{date}
-        </span>{" "}
-        {props.todo.description}
-        <button
+    <li class="list-group-item">
+     <div class="card">
+        <h4 class="card-header">{String(props.todo.title).toUpperCase()}</h4>
+        <div class="card-body">
+          <p class="card-text">{props.todo.description}</p>
+          <p class="text-muted">{date}</p>
+          
+          <button
           onClick={() => deleteTodoHandler(props.todo._id)}
-          className="btn btn-outline-danger my-2 mx-2"
-          style={{ borderRadius: "50px" }}
+          className="border-0 btn-transition btn btn-outline-danger"
         >
-          X
+          <i class="fa fa-trash"></i>{" "}
         </button>
-        <hr></hr>
-      </p>
-    </div>
+          <button
+          onClick={() => deleteTodoHandler(props.todo._id)}
+          className="border-0 btn-transition btn btn-outline-success"
+        >
+          <i class="fa fa-edit"></i>{" "}
+        </button>
+        </div>
+      </div>
+    </li>
   );
 }
 
 export default TodoItem;
+
