@@ -10,10 +10,9 @@ function TodoItem(props) {
   };
 
   let date = new Date(props.todo.created_at);
-  console.log(date);
-  date = date.toLocaleString();
+  let date2 =`${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`
   
-  date = 'created on ' + date
+  date = 'created on ' + date2
 
   if(props.todo.timestamp_updated_at){
       let date = new Date(props.todo.timestamp_updated_at);
