@@ -23,9 +23,9 @@ code {
 body {
     height: 100%;
     margin: 0;
-    /* background-repeat: no-repeat;
-    background-attachment: fixed; */
-   background: -webkit-linear-gradient(linear, left top, left bottom,from(#3010FF), to(#6473FF)) fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   background: -webkit-linear-gradient(left, #43cea2, #185a9d);
    
 
   /* background: -moz-linear-gradient(
