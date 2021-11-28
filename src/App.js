@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div
-      className="App list-group-item  justify-content-center align-items-center mx-auto"
+      className="todo-app list-group-item  justify-content-center align-items-center mx-auto"
       style={{ width: "400px", backgroundColor: "white", marginTop: "15px" }}
     >
       <h1
