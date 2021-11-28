@@ -21,7 +21,8 @@ code {
 }
 
 body {
-  background: -moz-linear-gradient(
+   background: -webkit-linear-gradient(left, #3010FF, #6473FF);
+  /* background: -moz-linear-gradient(
     90deg,
     rgba(48, 16, 255, 1) 0%,
     rgba(100, 115, 255, 1) 100%
@@ -35,7 +36,7 @@ body {
     90deg,
     rgba(48, 16, 255, 1) 0%,
     rgba(100, 115, 255, 1) 100%
-  );
+  ); */
 }
 .todo-app {
   display: flex;
