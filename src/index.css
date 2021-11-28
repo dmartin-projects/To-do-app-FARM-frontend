@@ -21,11 +21,12 @@ code {
 }
 
 body {
-    height: 100%;
-    margin: 0;
+  /* background: red; fallback color */
+    background: linear-gradient( to bottom, #3010FF, #6473FF);
     background-repeat: no-repeat;
-    background-attachment: fixed;
-   background: -webkit-linear-gradient(left, #43cea2, #185a9d);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
    
 
   /* background: -moz-linear-gradient(
