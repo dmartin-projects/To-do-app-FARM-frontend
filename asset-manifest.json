@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/To-do-app-FARM-frontend/static/css/main.9eebf989.chunk.css",
+    "main.css": "/To-do-app-FARM-frontend/static/css/main.89dc7536.chunk.css",
     "main.js": "/To-do-app-FARM-frontend/static/js/main.74811a83.chunk.js",
     "main.js.map": "/To-do-app-FARM-frontend/static/js/main.74811a83.chunk.js.map",
     "runtime-main.js": "/To-do-app-FARM-frontend/static/js/runtime-main.2722146e.js",
@@ -12,14 +12,14 @@
     "static/js/3.e2dfee54.chunk.js.map": "/To-do-app-FARM-frontend/static/js/3.e2dfee54.chunk.js.map",
     "index.html": "/To-do-app-FARM-frontend/index.html",
     "static/css/2.383c0125.chunk.css.map": "/To-do-app-FARM-frontend/static/css/2.383c0125.chunk.css.map",
-    "static/css/main.9eebf989.chunk.css.map": "/To-do-app-FARM-frontend/static/css/main.9eebf989.chunk.css.map",
+    "static/css/main.89dc7536.chunk.css.map": "/To-do-app-FARM-frontend/static/css/main.89dc7536.chunk.css.map",
     "static/js/2.46389bd9.chunk.js.LICENSE.txt": "/To-do-app-FARM-frontend/static/js/2.46389bd9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2722146e.js",
     "static/css/2.383c0125.chunk.css",
     "static/js/2.46389bd9.chunk.js",
-    "static/css/main.9eebf989.chunk.css",
+    "static/css/main.89dc7536.chunk.css",
     "static/js/main.74811a83.chunk.js"
   ]
 }
