@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div
-      className=" container col-md-5 todo-app list-group-item  justify-content-center align-items-center mx-auto"
+      className=" col-md-5 list-group-item  justify-content-center align-items-center mx-auto"
     >
       <h1>What's the Plan for Today?</h1>
       <div className="card-body ">
