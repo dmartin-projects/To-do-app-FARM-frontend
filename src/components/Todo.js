@@ -13,16 +13,6 @@ function TodoItem(props) {
   let date2 =`${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`
   
   date = 'created on ' + date2
-
-  if(props.todo.timestamp_updated_at){
-      let date = new Date(props.todo.timestamp_updated_at);
-     
-      date = date.toLocaleString();
-      
-      date = 'task updated on ' + date
- 
-  }
-
       
   return (
     <li class="list-group-item">

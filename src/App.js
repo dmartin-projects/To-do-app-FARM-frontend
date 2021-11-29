@@ -19,13 +19,15 @@ function App() {
   });
 
   // Post a todo
-  const addTodoHandler = () => {
+  const addTodoHandler = (e) => {
+
     axios
       .post("https://to-do-app-farm-backend.herokuapp.com/api/todo/", {
         title: title,
         description: desc,
       })
-      .then((res) => console.log(res));
+      .then((res) =>console.log(res));
+  
   };
 
   return (
@@ -65,58 +67,3 @@ function App() {
 export default App;
 
 // HACER UN CAMBIO EN EL DISEÑO
-
-{
-  /* <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-
-<div class="container">
-<div class="mt-5">
-
-      <div class="d-style btn btn-brc-tp border-2 bgc-white btn-outline-blue btn-h-outline-blue btn-a-outline-blue w-100 my-2 py-3 shadow-sm">
-        <!-- Basic Plan -->
-        <div class="row align-items-center">
-          <div class="col-12 col-md-4">
-            <h4 class="pt-3 text-170 text-600 text-primary-d1 letter-spacing">
-              Basic Plan
-            </h4>
-
-            <div class="text-secondary-d1 text-120">
-              <span class="ml-n15 align-text-bottom">$</span><span class="text-180">10</span> / month
-            </div>
-          </div>
-
-          <ul class="list-unstyled mb-0 col-12 col-md-4 text-dark-l1 text-90 text-left my-4 my-md-0">
-            <li>
-              <i class="fa fa-check text-success-m2 text-110 mr-2 mt-1"></i>
-              <span>
-                <span class="text-110">Donec id elit.</span>
-              Fusce dapibus...
-              </span>
-            </li>
-
-            <li class="mt-25">
-              <i class="fa fa-check text-success-m2 text-110 mr-2 mt-1"></i>
-              <span class="text-110">
-                Placerat duis
-            </span>
-            </li>
-
-            <li class="mt-25">
-              <i class="fa fa-times text-danger-m3 text-110 mr-25 mt-1"></i>
-              <span class="text-110">
-                Tortor mauris
-            </span>
-            </li>
-          </ul>
-
-          <div class="col-12 col-md-4 text-center">
-            <a href="#" class="f-n-hover btn btn-info btn-raised px-4 py-25 w-75 text-600">Get Started</a>
-          </div>
-        </div>
-
-      </div>
-
-      </div>
-    </div>
-</div> */
-}
