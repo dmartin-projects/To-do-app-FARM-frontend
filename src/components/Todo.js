@@ -88,16 +88,11 @@ function TodoItem(props) {
             <Button className="glow-on-hover" onClick={(e) => sendData(props.todo._id)}>
                 enviar
             </Button>
-                {/* <button
-            onClick={(e) => onLoginFormSubmit(props.todo._id)}
-            className="glow-on-hover"
-        >
-            enviar
-        </button> */}
+
         </Form>
         </Modal.Body>
       </Modal>
-        {/* <myModal show={show} onHide={handleClose} props = {props}/> */}
+        
       
     </li>
   );
