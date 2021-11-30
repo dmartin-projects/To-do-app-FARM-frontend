@@ -5,7 +5,6 @@ import axios from "axios";
 
 function TodoItem(props) {
 
-  const [title2, setTitle2] = useState("");
   const [desc2, setDesc2] = useState("");
   
   const [show, setShow] = useState(false);
@@ -49,6 +48,7 @@ function TodoItem(props) {
         <h4 className="card-header">{String(props.todo.title).toUpperCase()}</h4>
         <div className="card-body">
           <p className="card-text">{props.todo.description}</p>
+          <br />
           <p className="text-muted">{date}</p>
           
           <button
@@ -79,7 +79,6 @@ function TodoItem(props) {
                 <Form.Control
                 type="text"
                 placeholder={props.todo.description}
-                value={desc2}
                 onChange={(e) => setDesc2(e.target.value)}
                 />
             
