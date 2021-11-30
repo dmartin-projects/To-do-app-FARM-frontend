@@ -20,7 +20,8 @@ function App() {
 
   // Post a todo
   const addTodoHandler = (e) => {
-
+    setTitle("")
+    setDesc("")
     axios
       .post("https://to-do-app-farm-backend.herokuapp.com/api/todo/", {
         title: title,
@@ -42,11 +43,14 @@ function App() {
             className="mb-2 form-control titleIn"
             onChange={(event) => setTitle(event.target.value)}
             placeholder="Title"
+            value={title}
           />
           <input
             className="mb-2 form-control desIn"
             onChange={(event) => setDesc(event.target.value)}
             placeholder="Description"
+            value={desc}
+            
           />
               <div class="col d-flex justify-content-center mb-3">
                 <button className="glow-on-hover" onClick={addTodoHandler}>Add Task</button>
